@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+  padding: 0;
+  @font-face{
+    font-family: 'Billabong';
+    src: url('Billabong.ttf');
+    font-family: 'SegoeUI';
+    src: url('Segoe UI.ttf');
+    src: url('Segoe UI Italic.ttf');
+    src: url('Segoe UI Bold.ttf');
+    src: url('Segoe UI Bold Italic.ttf');
+  }
+}
+
+form{
+  float: left;
+  box-shadow: 5px 5px 2px 5px #dedede;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI';
+  width: 450px;
+  height: 450px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #000;
+  background-color: #f1f1f1;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+
+}/*transform: scale(1.01, 1.01);
+transition: width 5s ease-in;*/
+
+a:visited{
+  color: #000;
+}
+
+.profimage{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  margin-top: -10px;
+  width: 450px;
+  height: 245px;
+}
+
+form:hover{
+  background-color: #e5e5e5;
+  transition: 0.5s;
+  transform: scale(1.03, 1.03);
+}
+
+form:hover .profimage{
+}
+
+.Name{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}

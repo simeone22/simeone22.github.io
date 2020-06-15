@@ -1,0 +1,71 @@
+*{
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  @font-face{
+    font-family: 'Billabong';
+    src: url('Billabong.ttf');
+    font-family: 'SegoeUI';
+    src: url('Segoe UI.ttf');
+    src: url('Segoe UI Italic.ttf');
+    src: url('Segoe UI Bold.ttf');
+    src: url('Segoe UI Bold Italic.ttf');
+  }
+}
+
+.Nav{background: linear-gradient(120deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#f56040,#f77737,#fcaf45);}
+
+.Nav ul{
+  padding: 0;
+  margin: 0;
+}
+
+.Nav li{
+  list-style: none;
+  font-family: 'Segoe UI';
+  min-width: 5em;
+  padding-right: 70px;
+  padding-left: 70px;
+  display: inline;
+}
+
+.Nav a:visited{color: #fff;}
+
+.Nav a:hover{color: #419bf1;}
+
+.Nav a{
+  font-weight: 500;
+  padding: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.bannerframe{
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Billabong';
+  background: linear-gradient(90deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#f56040,#f77737,#fcaf45);
+}
+
+.pos a{
+  color: #419bf1;
+}
+
+.pos a:hover{
+  color: #fff;
+}
+
+.pos a:visited{
+  color: #419bf1;
+}

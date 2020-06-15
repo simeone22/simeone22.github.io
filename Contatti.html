@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <title>SponsInsta-Contatti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="icon" href="images\Senza-titolo-1.ico">
+    <link rel="stylesheet" href="CSS\Master.css">
+    <link rel="stylesheet" href="CSS\Contatti.css">
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("email-form");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+            }
+          }
+        </script>
+  </head>
+  <body>
+    <div class="bannerframe">
+      <font>SponsInsta</font>
+    </div>
+    <nav class="Nav">
+      <ul>
+        <center>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Chi siamo.html">Chi Siamo</a></li>
+          <li class="pos"><a href="Contatti.html">Contatti</a></li>
+          <li><a href="Sponsorizzazioni.html">Sponsorizzazioni</a></li>
+          <li><a href="LogReg\login.html">Accedi/Registrati</a></li>
+          <li><a href="Cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </center>
+      </ul>
+    </nav>
+    <div class="social-buttons">
+          <a href="https://www.facebook.com/?ref=logo" class="face"><i class="fab fa-facebook-f"></i></a>
+          <font>Per contattarci su facebook scrivi a @sponsinsta</font>
+
+          <a href="https://twitter.com/home" class="twitter"><i class="fab fa-twitter"></i></a>
+          <font>Per contattarci su twitter scrivi a @sponsinsta</font>
+
+          <a href="https://www.instagram.com/?hl=it" class="insta"><i class="fab fa-instagram"></i></a>
+          <font>Per contattarci su instagram scrivi a @sponsinsta</font>
+
+          <button type="button" name="email" onclick="myFunction()"><i class="far fa-envelope"></i></button>
+          <font>Per contattarci per email compila il form qua sotto</font>
+
+          <form class="email-form" action="index.html" method="post" id="email-form">
+            <input type="text" name="Oggetto" value="" placeholder="Oggetto">
+            <input type="text" name="Richiesta" value="" placeholder="Richiesta">
+            <input type="submit" name="" value="invia">
+        </form>
+
+    </div>
+  </body>
+</html>

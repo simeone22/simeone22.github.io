@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  @font-face{
+    font-family: 'SegoeUI';
+    src: url('Segoe UI.ttf');
+    src: url('Segoe UI Italic.ttf');
+    src: url('Segoe UI Bold.ttf');
+    src: url('Segoe UI Bold Italic.ttf');
+  }
+}
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(120deg,#405de6,#833ab4,#e1306c,#f56040,#fcaf45);
+}
+.LoginBox{
+  font-family: 'Segoe UI';
+  width: 360px;
+  background-color: #f1f1f1;
+  height: 460px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.LoginBox h1{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.LoginBox input{
+  border: none;
+  font-family: 'Segoe UI';
+  width: 100%;
+}
+.DivIn{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+.DivIn input{
+    font-weight: 500;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+.DivIn span::before{
+  font-family: 'Segoe UI';
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+.DivIn span::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(120deg,#405de6,#833ab4,#e1306c,#f56040,#fcaf45);
+  transition: .5s;
+  left: 0;
+}
+.focus + span::before{
+  top: -5px;
+}
+.focus + span::after{
+  width: 100%;
+}
+.logbtn{
+  font-weight: 500;
+  height: 50px;
+  background: linear-gradient(120deg,#405de6,#833ab4,#e1306c,#f56040,#fcaf45);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}
+.logbtn:hover{
+  background-position: right;
+}
+.btxt{
+  text-align: center;
+  margin-top: 80px;
+  font-weight: 500;
+}
